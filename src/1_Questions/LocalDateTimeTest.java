@@ -15,8 +15,9 @@ public class LocalDateTimeTest{
 
 	//1,LocalDate API
 	public static void dateFromat(){
-		//String date = LocalDate.parse("2023-02-05").format(DateTimeFormatter.ISO_DATE_TIME);  //这里报错，应该是DateTimeFormatter.ISO_DATE
-		String date = LocalDate.parse("2023-02-05").format(DateTimeFormatter.ISO_DATE); 
+		//这里报错，应该是DateTimeFormatter.ISO_DATE(年月日)，ISO_DATE_TIME是有时分秒的日期格式，OCJP原题
+		String date = LocalDate.parse("2023-02-05").format(DateTimeFormatter.ISO_DATE_TIME); 
+		//String date = LocalDate.parse("2023-02-05").format(DateTimeFormatter.ISO_DATE);  //正确写法
 		System.out.println(date);
 	}
 
