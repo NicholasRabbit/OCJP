@@ -24,7 +24,7 @@ hs_err_pid*
 replay_pid*
 
 # exclude specific diretories
-!./src/ojcp-test/lib/*
+!src/ojcp-test/lib/*
 
 # idea
 **/.idea
