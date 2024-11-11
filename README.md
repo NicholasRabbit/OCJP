@@ -1,2 +1,2 @@
 # OCJP
-Preparing for OCJP exam.
+Preparing for the OCJP exam.
