@@ -16,7 +16,7 @@ public class StringMethod {
 		//System.out.println(product.substring(4,6));   //此行报错，"StringIndexOutOfBoundsException"因为product变量本身没变化。
 	}
 
-	//2, trim(),注意trim()方法的返回值是修建后的结果，调用者本身不改变
+	//2, trim(),注意trim()方法的返回值也是修剪后的结果，调用者本身不改变
 	public static void trim(){
 		String str = " ";
 		str.trim();
