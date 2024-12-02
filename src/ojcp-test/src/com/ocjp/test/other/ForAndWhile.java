@@ -11,7 +11,7 @@ public class ForAndWhile {
 				System.out.print(col + " ");
 				col -= 2;
 			}
-			row = row / col;
+			row = row / col;  // Note that col is -2 here, not 0.
 		}
 
 	}

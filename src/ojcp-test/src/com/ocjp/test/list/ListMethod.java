@@ -23,13 +23,11 @@ public class ListMethod {
 		 * */
 		ps.add(p2);
 		int f = ps.indexOf(p2);
-		
-
 		System.out.println("f = " + f);
 		if(f >= 0)
 			System.out.println("Mike found");
 	
-		//这里new一个同名字的对象，但是hachCode不同，所以找不到
+		//这里new一个同名字的对象，但是hashCode不同，所以找不到
 		int f2 = ps.indexOf(new Patient("Mike"));
 		if(f2 >= 0)
 			System.out.println("Mike found ??");
@@ -40,7 +38,6 @@ public class ListMethod {
 
 class Patient{
 	String name;
-
 	public Patient(String name){
 		this.name = name;
 	}

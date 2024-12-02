@@ -23,10 +23,8 @@ public class EqualAndString {
 
     @Test
     public void testEqualOfString() {
-        String str2 = str1;
+        String str2 = str1;   // str1 and str2 have the same reference of an object.
         assertTrue(str1 == str2);
-
-
     }
 
     /*

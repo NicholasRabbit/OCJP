@@ -44,9 +44,9 @@ public class ExceptionInFor{
 				int j = 10 / 0;
 
 			//异常捕捉的不对，for会直接终止
-			//}catch(StringIndexOutOfBoundsException e) {
+			}catch(StringIndexOutOfBoundsException e) {
 			//异常ArithmeticException: byZero被准确捕捉，因此for循环不会被中断。
-			}catch(ArithmeticException e) {
+//			}catch(ArithmeticException e) {
 				count ++;
 				System.out.println("catch..." + count);
 			}

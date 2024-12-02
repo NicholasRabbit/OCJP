@@ -22,10 +22,11 @@ public class ListAndStringTest {
         list.add("EE");
         list.add("ME");
         // Adding "SE" here will not replace the first "SE".
-        // Because we can save duplicate elements in different positions of a list.
+        // Because we can store duplicate elements in different positions of a list.
         list.add("SE");
         list.add("EE");
 
+        // The method "remove(...)" will only remove the first element which is matched the argument.
         list.remove("SE");
 
         System.out.println("Values are: " + list);

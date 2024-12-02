@@ -9,7 +9,7 @@ public class CastingTest {
         Base b3 = new DerivedB();
         b1 = (Base)b3;   //强制向上转型，实际不写默认自动转，不省略的话写上也可以，不报错
 
-        Base b4 = (DerivedA) new DerivedB();
+        Base b4 = (DerivedA) b3;
 
         b1.test();
         b4.test();
