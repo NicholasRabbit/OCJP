@@ -7,17 +7,15 @@ package com.ocjp.test.exception_test;
 public class WhichException {
 
     /*
-    * 输出结果：third
-    * 原因：
-    * 12行抛出IndexOutOfBoundException，下面catch中没有相应的接收，所以会上抛
-    * 上抛后由main方法的Exception接收并处理。
-    * display方法发生运行时异常上抛后，后面的语句不会执行。
+    * The output is "third".
+    * Analyses:
+    * At "tag A" IndexOutOfBoundException will be thrown to the upper level while there is no matched exception in "catch(...)".
 	*
-	* 其它详见JavaSE: ExceptionTest005.java
+	* See ExceptionTest005.java in my personal Java code.
     * */
     static void display(int[] num){
         try{
-            System.out.println(num[1] / num[1] - num[2]);
+            System.out.println(num[1] / num[1] - num[2]);  //Tag: A
         }catch (ArithmeticException e){
             System.err.println("first");
         }

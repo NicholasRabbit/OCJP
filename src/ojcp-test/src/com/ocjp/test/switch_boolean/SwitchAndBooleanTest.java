@@ -6,6 +6,7 @@ public class SwitchAndBooleanTest {
         test();
     }
 
+    // boolean couldn't be the condition of 'switch(...)'.
     private static void test() {
         //boolean b = true;
         String b = "true";

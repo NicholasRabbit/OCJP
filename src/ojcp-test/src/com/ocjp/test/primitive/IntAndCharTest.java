@@ -16,7 +16,7 @@ public class IntAndCharTest {
 	public static void main(String[] args){
 		/*
 		* Overload.
-		* x is char so the method with a parameter of char will be called. Because 8 in the range between -128 and 127,
+		* "x" is char so the method with a parameter of char will be called. Because 8 in the range between -128 and 127,
 		* it will be automatically cast to a char.
 		* Apparently, '8' is automatically cast to a longer data type, too.
 		* */

@@ -17,7 +17,6 @@ public class EqualAndString {
     public void setUp() {
         sb1 = new StringBuilder("Duke");
         str1 = sb1.toString();
-        String str2 = sb1.toString();
     }
 
 
