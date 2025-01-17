@@ -10,7 +10,7 @@ public class ArrayTest {
         numbers[2] = 3;
         numbers[3] = 4;
         for (int x : numbers) {
-            System.out.println(" " + x);
+            System.out.print(" " + x);
         }
 
 
