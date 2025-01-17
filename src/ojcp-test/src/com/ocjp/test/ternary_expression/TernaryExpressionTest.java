@@ -2,7 +2,7 @@ package com.ocjp.test.ternary_expression;
 
 public class TernaryExpressionTest{
 
-	//Input the arguments in CLI: java TernaryExpressionTest 100
+	//Input the arguments of "main(...)" method in CLI: java TernaryExpressionTest 100
 	public static void main(String[] args){
 	
 		double d = 0;
