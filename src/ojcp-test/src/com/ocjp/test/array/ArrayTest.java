@@ -12,8 +12,6 @@ public class ArrayTest {
         for (int x : numbers) {
             System.out.print(" " + x);
         }
-
-
-
     }
+
 }

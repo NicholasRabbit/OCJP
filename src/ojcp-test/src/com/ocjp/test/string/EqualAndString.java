@@ -7,7 +7,7 @@ import org.junit.Test;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
-// Q108
+// Q117
 public class EqualAndString {
 
     private StringBuilder sb1;
