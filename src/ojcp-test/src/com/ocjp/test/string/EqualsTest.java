@@ -10,13 +10,13 @@ public class EqualsTest {
             str1 += c;
         }
         /*
-        * Even though "str1" and "str2" have the same "hasCode",
-        * they don't equals because the result of "==" is true
-        * if and only if their references are identical.
-        * Namely the "memory location".
+        * though "str1" and "str2" have the same "hasCode",
+        * they don't equal to each other because the result of "==" is true
+        * if and only if their references are identical, namely the "memory location".
+        * Apparently, they hold distinct references.
         * */
-        System.out.println(str1.hashCode());
-        System.out.println(str2.hashCode());
+        System.out.println("str1 ==> " + str1.hashCode());
+        System.out.println("str2 ==> " + str2.hashCode());
         System.out.println(str1 == str2);  // false.  "==" checks for reference equality
         System.out.println(str1.equals(str2)); // true.  "equals(...)" checks for value equality
 

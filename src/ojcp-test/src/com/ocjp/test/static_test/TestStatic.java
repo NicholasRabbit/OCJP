@@ -23,7 +23,8 @@ public class TestStatic {
     }
 
     public static void main(String[] args) {
-
+        update(args);
+        System.out.println(data);
     }
 
 }
