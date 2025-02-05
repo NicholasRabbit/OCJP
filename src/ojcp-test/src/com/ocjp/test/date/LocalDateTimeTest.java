@@ -1,6 +1,7 @@
 package com.ocjp.test.date;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 
@@ -16,9 +17,12 @@ public class LocalDateTimeTest{
 
 	//1,LocalDate API
 	public static void dateFromat(){
+
 		//这里报错，应该是DateTimeFormatter.ISO_DATE(年月日)，ISO_DATE_TIME是有时分秒的日期格式，OCJP原题
-		String date = LocalDate.parse("2023-02-05").format(DateTimeFormatter.ISO_DATE_TIME); 
-		//String date = LocalDate.parse("2023-02-05").format(DateTimeFormatter.ISO_DATE);  //正确写法
+		//String date = LocalDate.parse("2023-02-05").format(DateTimeFormatter.ISO_DATE_TIME);
+
+		//正确写法
+		String date = LocalDate.parse("2023-02-05").format(DateTimeFormatter.ISO_DATE);
 		System.out.println(date);
 	}
 
@@ -27,12 +31,14 @@ public class LocalDateTimeTest{
 	public static void localDate(){
 		LocalDate date1 = LocalDate.now();
 		LocalDate date2 = LocalDate.of(2014, 6, 20);
-		LocalDate date3 = LocalDate.parse("2014-06-20", DateTimeFormatter.ISO_DATE);
+		LocalDateTime date3 = LocalDateTime.of(2025, 1, 02, 12, 23, 55);
+		LocalDate date4 = LocalDate.parse("2014-06-20", DateTimeFormatter.ISO_DATE);
 
 		System.out.println("date1==>" + date1);
 		System.out.println("date2==>" + date2);
 		System.out.println("date3==>" + date3);
-	
+		System.out.println("date4==>" + date4);
+
 	}
 
 }
