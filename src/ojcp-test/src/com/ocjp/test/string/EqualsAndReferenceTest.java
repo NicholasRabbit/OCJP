@@ -1,6 +1,6 @@
 package com.ocjp.test.string;
 
-public class EqualsTest {
+public class EqualsAndReferenceTest {
 
     public static void main(String[] args) {
         char[] chars = {'J', 'a', 'v', 'a'};
@@ -19,6 +19,12 @@ public class EqualsTest {
         System.out.println("str2 ==> " + str2.hashCode());
         System.out.println(str1 == str2);  // false.  "==" checks for reference equality
         System.out.println(str1.equals(str2)); // true.  "equals(...)" checks for value equality
+
+        /*
+        * Instead, we could use "System.identityHashCode(...)" to get the default hashCode() before it is overridden.
+        * */
+        System.out.println(System.identityHashCode(str1));
+        System.out.println(System.identityHashCode(str2));
 
     }
 
