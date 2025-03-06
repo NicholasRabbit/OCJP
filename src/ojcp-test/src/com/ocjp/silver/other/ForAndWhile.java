@@ -14,6 +14,11 @@ public class ForAndWhile {
 			row = row / col;  // Note that col is -2 here, not 0.
 		}
 
+		int index = 0;
+		while (index++ < 5) {
+			System.out.println("index: " + index);
+		}
+
 	}
 
 }
