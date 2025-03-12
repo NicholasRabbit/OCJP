@@ -4,7 +4,7 @@ package com.ocjp.silver.string;
 public class StringBuilderTest {
 
     public static void main(String[] args) {
-
+        testReplace();
     }
 
     // empty a StringBuilder object
@@ -17,5 +17,19 @@ public class StringBuilderTest {
         builder.delete(0, builder.length());
         System.out.println(builder.toString());
     }
+
+    public static void testReplace() {
+        StringBuilder sb = new StringBuilder();
+        /*
+        * The end index is exclusive.
+        * public AbstractStringBuilder replace(int start, int end, String str) { }
+        * */
+        sb.append("Hello");
+        sb.replace(1, 2, "A");
+        System.out.println(sb);
+
+    }
+
+
 
 }
